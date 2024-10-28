@@ -7,8 +7,7 @@ Welcome to the **Chopsticks** game! This project implements a console-based vers
 - [Overview](#overview)
 - [Gameplay Rules](#gameplay-rules)
 - [How to Run](#getting-started)
-- [Project Structure](#project-structure)
-- [Algorithm Explanation](#algorithm-explanation)
+- [Algorithm](#algorithm)
 - [Logging and Debugging](#logging-and-debugging)
 - [Future Enhancements](#future-enhancements)
 
@@ -35,12 +34,16 @@ This Chopsticks game is a two-player game where each player (human or computer) 
    ```bash
    python3 game.py
 
-## Project Structure
-├── chopsticks.py       # Main file to run the game
-├── game.py             # Core game logic and mechanics
-├── player.py           # Player class, handling player properties and actions
-├── hand.py             # Hand class, managing finger counts and attacks
-└── chopsticks_logger.py # Logger configuration for debugging
+##Algorithm
+The Minimax algorithm in this Chopsticks game implementation powers the AI player, enabling it to evaluate potential moves and choose the optimal one. Here’s a breakdown of how the algorithm works.
+
+###Leaves/Base Cases
+1. The game is won, meaning one of the players has lost both hands.
+2. The game is in a loop, meaning the current simulated position has been seen before in its specific branch.
+
+###Pruning
+The main pruning method in this algorithm is remembering all previously calculated positions and their score using a dictionary, so that when a previously solved position is run into, it doesn't need to be recalculated. This also applies to all types reversals to a position, with appropriate modifications to the move and score.
+
 
   
 
