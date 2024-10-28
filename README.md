@@ -8,8 +8,7 @@ Welcome to the **Chopsticks** game! This project implements a console-based vers
 - [Gameplay Rules](#gameplay-rules)
 - [How to Run](#how-to-run)
 - [Algorithm](#algorithm)
-- [Logging and Debugging](#logging-and-debugging)
-- [Future Enhancements](#future-enhancements)
+- [To Do](#todo)
 
 ## Overview
 
@@ -42,12 +41,13 @@ For each node in a generation, an array of its children, the next generation (g1
 
 ### Leaves/Base Cases
 1. The game is won, meaning one of the players has lost both hands. If the player to max is the winner, the score fo the leaf is 1, and if the player to max is the loser, the score is -1.
-2. The game is in a loop, meaning the current simulated position has been seen before in its specific branch. The score of the leaf is 0.
+2. The game is in a loop, meaning the current simulated position has been seen before in its specific branch. The score of the leaf is 0. If this was not in place, the tree would never finish as it would get stuck in a loop.
 
 ### Value assessment
+In a minimax algorithm, after every leaf is found, values are assigned to nodes in ascending order. THe gam alternates between the minimizing and maximizing player, with teh maximizing player being the player who's turn it is. If the leaves of a node are 1, 0, and 0, and the player is maximizing, then 1 is teh greatest number, and therefore the value of that node. For the number 1, 0, -1, 1, with a minimizing player, -1 is assigned to the node as it is the smallest value. This continues up the tree until the original node has a value.
 
 ### Pruning
-The main pruning method in this algorithm is remembering all previously calculated positions and their score using a dictionary, so that when a previously solved position is run into, it doesn't need to be recalculated. This also applies to all types reversals to a position, with appropriate modifications to the move and score.
+Without pruning, this task is too large for a laptop to compute. The main pruning method in this algorithm is remembering all previously calculated positions and their score using a dictionary, so that when a previously solved position is run into, it doesn't need to be recalculated. This also applies to all types reversals to a position, with appropriate modifications to the move and score.
 
 
   
