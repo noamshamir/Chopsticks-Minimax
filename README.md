@@ -6,7 +6,7 @@ Welcome to the **Chopsticks** game! This project implements a console-based vers
 
 - [Overview](#overview)
 - [Gameplay Rules](#gameplay-rules)
-- [How to Run](#getting-started)
+- [How to Run](#how-to-run)
 - [Algorithm](#algorithm)
 - [Logging and Debugging](#logging-and-debugging)
 - [Future Enhancements](#future-enhancements)
@@ -34,7 +34,7 @@ This Chopsticks game is a two-player game where each player (human or computer) 
    ```bash
    python3 game.py
 
-##Algorithm
+## Algorithm
 The Minimax algorithm in this Chopsticks game implementation powers the AI player, enabling it to evaluate potential moves and choose the optimal one. Here’s a breakdown of how the algorithm works.
 
 ###Leaves/Base Cases
