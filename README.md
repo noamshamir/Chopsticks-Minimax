@@ -37,11 +37,11 @@ This Chopsticks game is a two-player game where each player (human or computer) 
 ## Algorithm
 The Minimax algorithm in this Chopsticks game implementation powers the AI player, enabling it to evaluate potential moves and choose the optimal one. Here’s a breakdown of how the algorithm works.
 
-###Leaves/Base Cases
+### Leaves/Base Cases
 1. The game is won, meaning one of the players has lost both hands.
 2. The game is in a loop, meaning the current simulated position has been seen before in its specific branch.
 
-###Pruning
+### Pruning
 The main pruning method in this algorithm is remembering all previously calculated positions and their score using a dictionary, so that when a previously solved position is run into, it doesn't need to be recalculated. This also applies to all types reversals to a position, with appropriate modifications to the move and score.
 
 
