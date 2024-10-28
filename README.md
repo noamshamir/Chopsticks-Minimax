@@ -16,13 +16,13 @@ This Chopsticks game is a two-player game where each player (human or computer) 
 
 ## Gameplay Rules
 
-1. **Initial Setup**: Each player starts with one finger raised on each hand.
-2. **Turns**: Players take turns attacking the opponent.
+- **Initial Setup**: Each player starts with one finger raised on each hand.
+- **Turns**: Players take turns attacking the opponent.
    - **Attacking**: Choose a hand to attack with and an opponent's hand to attack. 
    - **Damage**: When a hand attacks, its finger count is added to the attacked hand's fingers.
-3. **Rollover**: This version of Chopsticks has a rollover, meaning when an attack results in more than five fingers, the resulting fingers is the fingers mod five.
-4. **Winning**: The game ends when both hands of one player reach 0 fingers, making them "dead."
-5. **Splitting**: This version of chopsticks doesn't include splitting, only attacks.
+- **Rollover**: This version of Chopsticks has a rollover, meaning when an attack results in more than five fingers, the resulting fingers is the fingers mod five.
+- **Winning**: The game ends when both hands of one player reach 0 fingers, making them "dead."
+- **Splitting**: This version of chopsticks doesn't include splitting, only attacks.
 
 ## How to Run
 1. Clone the repository:
