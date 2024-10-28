@@ -31,9 +31,12 @@ This Chopsticks game is a two-player game where each player (human or computer) 
    ```bash
    git clone https://github.com/your-username/chopsticks-game.git
    cd chopsticks-game
-2. Run the game.py file
-  ```bash
+1. Run the game file:
+   ```bash
    python3 game.py
+
+## Project Structure
+
   
 
 
