@@ -36,6 +36,11 @@ This Chopsticks game is a two-player game where each player (human or computer) 
    python3 game.py
 
 ## Project Structure
+├── chopsticks.py       # Main file to run the game
+├── game.py             # Core game logic and mechanics
+├── player.py           # Player class, handling player properties and actions
+├── hand.py             # Hand class, managing finger counts and attacks
+└── chopsticks_logger.py # Logger configuration for debugging
 
   
 
