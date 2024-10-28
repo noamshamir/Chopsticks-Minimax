@@ -40,8 +40,8 @@ The Minimax algorithm in this Chopsticks game implementation powers the AI playe
 For each node in a generation, an array of its children, the next generation (g1), is generated. However, as this algorithm searches vertically, all the children of the next generation (g2) arent generated until the child of the first child (g1) is generated. This continues, with the first children of each generation mapping out the first branch of the tree.
 
 ### Leaves/Base Cases
-1. The game is won, meaning one of the players has lost both hands. If the player to max is the winner, the score fo the leaf is 1, and if the player to max is the loser, the score is -1.
-2. The game is in a loop, meaning the current simulated position has been seen before in its specific branch. The score of the leaf is 0. If this was not in place, the tree would never finish as it would get stuck in a loop.
+- **Win**: The game is won, meaning one of the players has lost both hands. If the player to max is the winner, the score fo the leaf is 1, and if the player to max is the loser, the score is -1.
+- **Tie**: The game is in a loop, meaning the current simulated position has been seen before in its specific branch. The score of the leaf is 0. If this was not in place, the tree would never finish as it would get stuck in a loop.
 
 ### Value assessment
 In a minimax algorithm, after every leaf is found, values are assigned to nodes in ascending order. The algorithm alternates between the minimizing and maximizing player, with the maximizing player being the player who's turn it is. If the leaves of a node are (1, 0, and 0), and the player is maximizing, then 1 is the greatest number, and therefore the value of that node. For the leaves are (1, 0, -1, 1) with a minimizing player, -1 is assigned to the node as it is the smallest value. This continues up the tree until the original node has a score.
