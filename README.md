@@ -1,6 +1,6 @@
 # Chopsticks Minimax
 
-Welcome to the **Chopsticks** game! This project implements a console-based version of the finger-counting children's game "aChopsticks." In this game, players take turns using their fingers to “attack” each other's hands, aiming to eliminate the opponent by strategically transferring finger counts.
+Welcome to the **Chopsticks** game! This project implements a console-based version of the finger-counting children's game "Chopsticks." In this game, players take turns using their fingers to “attack” each other's hands, aiming to eliminate the opponent by strategically transferring finger counts.
 
 ## Table of Contents
 
